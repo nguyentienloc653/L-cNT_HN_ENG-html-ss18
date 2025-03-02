@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let admin = prompt("Nhập tên");
+
+        if(admin === "ADMIN"){
+            let passWord = prompt("Nhập mật khẩu :");
+
+            if( passWord === "TheMaster"){
+                console.log("Welcome");
+            }else if(passWord === ""){
+                console.log("Cancelled");
+        }else {
+            console.log("Wrong password");
+        }
+    }else if(admin === ""){
+        console.log("Cancelled");
+    }else{
+        console.log("I Don't know you");
+    }
+</script>
+</body>
+</html>
