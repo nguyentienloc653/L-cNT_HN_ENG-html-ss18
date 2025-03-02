@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let maths = +prompt("Nhập điểm môn toán :");
+        let literature = +prompt("Nhập điểm môn văn :");
+        let english = +prompt("Nhập điểm môn tiếng anh :");
+
+        let medium = (maths + literature + english) / 3;
+
+        if(medium >= 8){
+            document.write("giỏi");
+        }else if(medium >= 6.5 && medium <7.9 ){
+            document.write("khá");
+        }else if(medium >= 5 && medium < 6.4 ){
+            document.write("trùng bình");
+        }else{
+            document.write("yếu");
+        }
+    </script>
+</body>
+</html>
